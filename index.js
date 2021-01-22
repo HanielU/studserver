@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT;
 
 app.use(cors()); // This is here because of cross origin request errors
 app.use(express.json()); // for parsing application/json
